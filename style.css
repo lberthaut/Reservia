@@ -1,0 +1,36 @@
+@font-face 
+{   font-family: 'Raleway';
+    src: url('images/police/Raleway-light.ttf');}
+body
+{   font-family: Raleway, serif;}
+a:link
+{   text-decoration:none;
+}
+.tete
+{   display: flex;
+    align-items: stretch;
+    padding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+header
+{   flex: 2;
+}
+nav
+{   flex: 1;
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    margin-right: 1%;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+a
+{   color: black;
+}
+.volbleu:hover
+{   color: #0065FC;
+}
+.volbleu:nth-child(3)
+{   font-weight: bold;
+}
