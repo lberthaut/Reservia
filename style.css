@@ -4,18 +4,15 @@
 body
 {   font-family: Raleway, serif;}
 a:link
-{   text-decoration:none;
-}
+{   text-decoration:none;}
 .tete
 {   display: flex;
     align-items: stretch;
     padding: 2px;
     padding-left: 2px;
-    padding-right: 2px;
-}
+    padding-right: 2px;}
 header
-{   flex: 2;
-}
+{   flex: 2;}
 nav
 {   flex: 1;
     padding-top: 1.2%;
@@ -23,14 +20,15 @@ nav
     margin-right: 1%;
     text-align: right;
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: space-between;}
 a
-{   color: black;
-}
+{   color: black;}
 .volbleu:hover
-{   color: #0065FC;
-}
+{   color: #0065FC;}
 .volbleu:nth-child(3)
-{   font-weight: bold;
-}
+{   font-weight: bold;}
+.bold
+{   font-weight: bold;}
+.GPS
+{   width: 1%;
+    height: 1%; }
