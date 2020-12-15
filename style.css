@@ -1,47 +1,159 @@
 @font-face 
-{   font-family: 'Raleway';
-    src: url('images/police/Raleway-light.ttf');}
+{   
+    font-family: 'Raleway';
+    src: url('images/police/Raleway-light.ttf');
+}
+
 body
-{   font-family: Raleway, serif;}
+{
+    font-family: Raleway, serif;
+}
+
 a:link
-{   text-decoration:none;}
+{
+    text-decoration:none;
+}
+
 .tete
-{   display: flex;
+{
+    display: flex;
     align-items: stretch;
-    padding: 2px;
     padding-left: 2px;
-    padding-right: 2px;}
+    padding-right: 2px;
+    padding-bottom: 40px;
+}
+
 header
-{   flex: 2;}
+{   
+    flex: 2;
+}
+
 nav
-{   flex: 1;
-    padding-top: 1.2%;
-    padding-bottom: 1.2%;
-    margin-right: 1%;
+{   
+    flex: 1;
     text-align: right;
     display: flex;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
+
 a
-{   color: black;}
+{   
+    color: black;
+}
+
 .volbleu:hover
-{   color: #0065FC;}
+{   
+    color: #0065FC;
+    border-color : #0065FC;
+}
+
+.volbleu
+{   
+    border-top: 2px solid;
+    border-color: transparent;
+    padding-top: 15px;
+}
+
 .volbleu:nth-child(3)
-{   font-weight: bold;}
+{   
+    font-weight: bold;
+}
+
 .bold
-{   font-weight: bold;}
-.GPS
-{   width: 1%;
-    height: 1%;
+{   
+    font-weight: bold;
+}
+
+.logoGPS
+{   
+    width: 20px;
+    height: 20px;
     border-top-left-radius: 25%;
     border-bottom-left-radius: 25%;
     background-color: #F2F2F2;
-    padding: 10px;}
+    padding: 8px;
+    text-align: center;
+}
 #Localisation
-{   color:black;
-    font-size:25px;}
+{   
+    color:black;
+    font-size:25px;
+    border:none;
+}
+
 .boutonrech
-{   font-size: 15px;
+{   
+    font-size: 15px;
     background-color: #0065FC;
-    border-top-right-radius: 15%;
-    border-bottom-right-radius: 15%;
-    padding: 8px;}
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 8px;
+    color: white;
+    border:none;
+}
+
+.GPS
+{   
+    display: flex;
+    max-width: 40%;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.logofiltres
+{
+    font-size: 20px;
+    color: #0065fc;
+}
+
+.boutonfiltres
+{
+    border: 2px solid;
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color: #F2F2F2;
+    border-left-color: transparent;
+    padding: 10px;
+    padding-right: 12px;
+}
+
+.boutonfiltres:focus
+{
+    outline: transparent;
+}
+
+.flexfiltres
+{
+    display: flex;
+    align-items: center;
+}
+
+.filters
+{
+    display: flex;
+    max-width: 60%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.logoinfo
+{
+    color: #0065FC;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 10px;
+}
+
+.info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
