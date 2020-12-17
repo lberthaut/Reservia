@@ -7,6 +7,8 @@
 body
 {
     font-family: Raleway, serif;
+    margin : xx auto;
+    width : xx auto;
 }
 
 a:link
@@ -164,6 +166,7 @@ a
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    width: auto;
 }
 
 #hebergements
@@ -232,7 +235,7 @@ a
 
  .populaires
 
- { background-color: #F2F2F2;
+ {  background-color: #F2F2F2;
     width: 30%;
     border-radius: 25px;
     display: flex;
@@ -267,4 +270,84 @@ a
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
+}
+
+
+.activities
+{   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 20px;
+    height: 470px;
+    width: auto;
+}
+
+.titre_align2
+{
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+.block_activities1
+{
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px #d4d4d4;
+    width: 250px;
+    height: 450px;
+}
+.photo_activities1
+{
+    height: 400px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.text_activities
+{
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.text_activities2
+{
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.block_activities2
+{
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px #d4d4d4;
+    width: 250px;
+    height: 250px;
+}
+
+.photo_activities2
+{
+    height: 200px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.block_activities3
+{
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px #d4d4d4;
+    width: 250px;
+    height: 150px;
+}
+
+.photo_activities3
+{
+    height: 100px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
 }
