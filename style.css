@@ -351,3 +351,32 @@ a
     overflow: hidden;
     border-radius: 25px 25px 0px 0px;
 }
+
+.footer_titles
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.footer_block
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 200px;
+}
+
+.footer_link
+{
+    padding-bottom: 10px;
+}
