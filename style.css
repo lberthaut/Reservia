@@ -186,7 +186,7 @@ a
 {
     font-weight: bold;
     font-size: 22px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -204,13 +204,14 @@ a
 
 .photo_description
 {
-    height: 20%;
+    height: 22%;
     width: 240px;
     background-color: white;
     border: 6px solid white;
     border-radius: 0px 0px 25px 25px;
     padding-bottom: 20px;
     box-shadow: 2px 2px 3px #d4d4d4;
+    line-height: 25px;
 }
 
 .rating
@@ -240,9 +241,29 @@ a
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     padding: 20px;
+}
+
+.titre_align2
+{
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.block_vertical
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .photo_image_vertical
@@ -263,31 +284,48 @@ a
     border: 6px solid white;
     border-radius: 0px 25px 25px 0px;
     box-shadow: 2px 2px 3px #d4d4d4;
+    line-height: 35px;
 }
 
-.block_vertical
+.photo_description_vertical2
 {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    width: 200px;
+    height: 130px;
+    display: inline-block;
+    background-color: white;
+    border: 6px solid white;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 2px 2px 3px #d4d4d4;
 }
 
+.photo_description_vertical2 div
+{
+    line-height: 20px;
+}
+
+.populaires .rating
+{
+    padding-top: 30px;
+}
 
 .activities
 {   display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:space-between;
-    padding: 20px;
+    justify-content:space-around;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 470px;
     width: auto;
+    justify-content: center;
+    align-content: center;
 }
 
-.titre_align2
+.titre_align3
 {
     font-size: 22px;
     font-weight: bold;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-top: 50px;
 }
 
@@ -295,20 +333,20 @@ a
 {
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
-    width: 250px;
+    width: 270px;
     height: 450px;
 }
 .photo_activities1
 {
     height: 400px;
-    width: 250px;
+    width: 270px;
     overflow: hidden;
     border-radius: 25px 25px 0px 0px;
 }
 
 .text_activities
 {
-    padding-left: 10px;
+    padding-left: 15px;
     padding-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -324,14 +362,14 @@ a
 {
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
-    width: 250px;
+    width: 270px;
     height: 250px;
 }
 
 .photo_activities2
 {
     height: 200px;
-    width: 250px;
+    width: 270px;
     overflow: hidden;
     border-radius: 25px 25px 0px 0px;
 }
@@ -340,14 +378,14 @@ a
 {
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
-    width: 250px;
+    width: 270px;
     height: 150px;
 }
 
 .photo_activities3
 {
     height: 100px;
-    width: 250px;
+    width: 270px;
     overflow: hidden;
     border-radius: 25px 25px 0px 0px;
 }
