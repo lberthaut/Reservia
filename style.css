@@ -5,8 +5,8 @@
 
 body{
     font-family: Raleway, serif;
-    margin : xx auto;
-    width : xx auto;
+    margin : auto;
+    width : auto;
 }
 
 a:link{
@@ -159,7 +159,7 @@ a{
 }
 
 .block_lodging{
-height: 200px;
+height: 210px;
 border: 6px solid white;
 display: flex;
 flex-direction: column;
@@ -177,28 +177,34 @@ box-shadow: 2px 2px 3px #d4d4d4;
     height: 120px;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
+    margin-top: 13px;
 }
 
 .photo_description{
-    height: 80px;
+    height: 90px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 .rating{
-    direction: rtl;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-.rating a{
-    color: #F2F2F2;
-    text-decoration: none;
-    font-size: 25px;
-    transition: color .4s;
+.full_stars{
+    display: inline-block;
+    font-size: 13px;
+    padding-top: 15px;
+    color:#0065FC;
  }
 
- .rating a:hover, .rating a:focus, .rating a:hover ~ a, .rating a:focus ~ a {
-    color: #0065FC;
-    cursor: pointer;
+ .empty_stars{
+     display: inline-block;
+    font-size: 13px;
+    padding-top: 15px;
+    color: #F2F2F2;
+    padding-left: 3px;
  }
 
  .titre_align{
@@ -214,20 +220,21 @@ box-shadow: 2px 2px 3px #d4d4d4;
 
  .populaires{  
     background-color: #F2F2F2;
-    width: 30%;
+    width: 32%;
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     padding: 20px;
+
 }
 
 .titre_align2{
     font-size: 22px;
     font-weight: bold;
-    padding-left: 40px;
+    padding-left: 20px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -237,37 +244,41 @@ box-shadow: 2px 2px 3px #d4d4d4;
 
 .block_vertical{
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    justify-content: stretch;
+    border: solid black;
+    height: 130px;
+    align-items: center;
+    width: 100%;
+    border: 6px solid white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px #d4d4d4;
 }
 
 .photo_image_vertical{
-    width: 160px;
     height: 130px;
-    border: 6px solid white;
+    width: 30%;
+    object-fit: cover;
     border-radius: 25px 0px 0px 25px;
-    box-shadow: 0px 2px 3px #d4d4d4;
 }
 
 .photo_description_vertical{
-    width: 200px;
+    width: 60%;
     height: 130px;
     display: inline-block;
     background-color: white;
-    border: 6px solid white;
     border-radius: 0px 25px 25px 0px;
-    box-shadow: 2px 2px 3px #d4d4d4;
     line-height: 35px;
+    padding-left: 10px;
 }
 
 .photo_description_vertical2{
-    width: 200px;
+    width: 60%;
     height: 130px;
     display: inline-block;
     background-color: white;
-    border: 6px solid white;
     border-radius: 0px 25px 25px 0px;
     box-shadow: 2px 2px 3px #d4d4d4;
+    padding-left: 10px;
 }
 
 .photo_description_vertical2 div{
@@ -275,7 +286,7 @@ box-shadow: 2px 2px 3px #d4d4d4;
 }
 
 .populaires .rating{
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .activities{   
@@ -372,4 +383,15 @@ box-shadow: 2px 2px 3px #d4d4d4;
 
 .footer_link{
     padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1280px)
+{
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
 }
