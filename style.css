@@ -106,6 +106,10 @@ a{
     outline: transparent;
 }
 
+.boutonfiltres:hover{
+    background-color: #0065FC;
+}
+
 .flexfiltres{
     display: flex;
     align-items: center;
@@ -218,75 +222,60 @@ box-shadow: 2px 2px 3px #d4d4d4;
     width: 90%;
 }
 
- .populaires{  
+.populaires{  
     background-color: #F2F2F2;
-    width: 32%;
+    width: 30%;
     border-radius: 25px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    align-content: center;
     padding: 20px;
-
 }
 
 .titre_align2{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
-    padding-left: 20px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
-}
-
-.block_vertical{
-    display: flex;
-    justify-content: stretch;
-    border: solid black;
-    height: 130px;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    border: 6px solid white;
-    border-radius: 25px;
-    box-shadow: 2px 2px 3px #d4d4d4;
 }
 
-.photo_image_vertical{
-    height: 130px;
-    width: 30%;
+.vertical_block{
+    height: 150px;
+    border: 6px solid white;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px #d4d4d4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.vertical_photo{
+    height: 150px;
+    width: 45%;
     object-fit: cover;
     border-radius: 25px 0px 0px 25px;
 }
 
-.photo_description_vertical{
-    width: 60%;
-    height: 130px;
-    display: inline-block;
-    background-color: white;
-    border-radius: 0px 25px 25px 0px;
-    line-height: 35px;
-    padding-left: 10px;
+.vertical_description{
+    padding-left: 15px;
+    line-height: 2.5;
 }
 
-.photo_description_vertical2{
-    width: 60%;
-    height: 130px;
-    display: inline-block;
-    background-color: white;
-    border-radius: 0px 25px 25px 0px;
-    box-shadow: 2px 2px 3px #d4d4d4;
-    padding-left: 10px;
+.vertical_description2{
+    padding-left: 15px;
 }
 
-.photo_description_vertical2 div{
-    line-height: 20px;
+.bigline{
+    line-height: 3.3;
 }
 
 .populaires .rating{
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .activities{   
@@ -305,6 +294,7 @@ box-shadow: 2px 2px 3px #d4d4d4;
     font-size: 25px;
     font-weight: bold;
     padding-top: 50px;
+    padding-left: 20px;
 }
 
 .block_activities1{
