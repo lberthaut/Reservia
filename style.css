@@ -45,8 +45,11 @@ a{
     padding-top: 15px;
 }
 
-.hover:nth-child(3){   
+.hover2{   
     font-weight: bold;
+    border-top: 2px solid;
+    border-color: transparent;
+    padding-top: 15px;
 }
 
 .bold{   
@@ -147,7 +150,7 @@ a{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: auto;
+    width: 1350px;
 }
 
 #hebergements{
@@ -285,8 +288,7 @@ box-shadow: 2px 2px 3px #d4d4d4;
     justify-content: space-between;
     padding-bottom: 40px;
     height: 470px;
-    width: auto;
-    justify-content: center;
+    width: 1350px;
     align-content: center;
 }
 
@@ -358,7 +360,7 @@ object-fit: cover;
 .footer{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 1350px;
     background-color: #F2F2F2;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -375,13 +377,39 @@ object-fit: cover;
     padding-bottom: 10px;
 }
 
-
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 480px)
 {
     body{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        width: auto;
+    }
 
+    header img{
+        width: 250px;
+    }
+
+    .head{
+        display: flex;
+        width: 100%;
+    }
+
+    nav{
+        font-size: 52px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .widthdevices{
+        margin-top: 60px;
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        margin-left: -100px;
+    }
+
+    .widthdevices a{
+        padding-right: 70%;
+    }
+
+    .widthdevices2{
+    padding-left: 120px;
     }
 }
