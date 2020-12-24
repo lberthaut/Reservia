@@ -15,19 +15,17 @@
             <a href="accueil.html"><img src="images/logo/reservia.svg" alt="logo" title="Accueil" /></a>
         </header>
         <nav>
-            <div class="widthdevices">
                 <a href="#ancre1" class="hover">Hébergements</a>
                 <a href="#ancre2" class="hover">Activités</a>
-            </div>
-            <div class="widthdevices2"
-                <a href="#" class="hover2">S'inscrire</a>
-        </div>
+                <span class="nonequery"><a href="#" class="hover2">S'inscrire</a></span>
         </nav>
+                <div class="nonelaptop"><a href="#" class="hover2">S'inscrire</a></div>
     </div>
     <section>
-        <h1 class="bold">Trouvez votre hébergement pour des vacances de rêves</h1>
+        <h1 class="bold_titles">Trouvez votre hébergement pour des vacances de rêves</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form method="post" action="#">
+    <!--For Computer-->
+        <form method="post" action="#" class="nonequery">
             <div for="Localisation" class="GPS">
                 <div class="logoGPS">
                     <i class="fas fa-map-marker"></i>
@@ -36,8 +34,23 @@
                 <input type="submit" name="boutonsub" value="Rechercher" class="boutonrech" />
             </div>
         </form>
+    <!---->
+    <!--Query for Max480-->
+        <form method="post" action="#" class="nonelaptop">
+            <div for="Localisation" class="GPS">
+                <div class="logoGPS">
+                    <i class="fas fa-map-marker"></i>
+                </div>
+                <input type="Text" name="Localisation" id="Localisation" placeholder="Marseille, France" />
+                <div class="researchbutton">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+        </form>
+    <!---->
         <div class="filters">
-            <p class="bold">Filtres</p>
+            <h1 class="bold_titles2">Filtres</h1>
+            <div class="filtersbutton">
             <div class="flexfiltres">
                 <div class="logofiltres">
                     <i class="fas fa-money-bill-wave"></i>
@@ -69,6 +82,7 @@
                 <form class="filtredog" method="post" action="#">
                     <input type="submit" name="dogs" value="Animaux" class="boutonfiltres" />
                 </form>
+            </div>
             </div>
         </div>
         <div class="info">
