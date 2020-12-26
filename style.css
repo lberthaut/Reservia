@@ -189,17 +189,17 @@ a{
 }
 
 .block_lodging{
-height: 210px;
-border: 6px solid white;
-display: flex;
-flex-direction: column;
-width: 30%;
-justify-content: space-around;
-align-items: left;
-background-color: white;
-border-radius: 25px;
-margin-bottom: 20px;
-box-shadow: 2px 2px 3px #d4d4d4;
+    height: 210px;
+    border: 6px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-around;
+    align-items: left;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px #d4d4d4;
 }
 
 .photo_hebergement{
@@ -310,9 +310,8 @@ box-shadow: 2px 2px 3px #d4d4d4;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 40px;
-    height: 470px;
-    width: 1350px;
-    align-content: center;
+    height: 450px;
+    width: 100%;
 }
 
 .titre_align3{
@@ -325,12 +324,11 @@ box-shadow: 2px 2px 3px #d4d4d4;
 .block_activities1{
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
-    width: 270px;
+    width: 22%;
     height: 450px;
 }
 .photo_activities1{
     height: 400px;
-    width: 270px;
     overflow: hidden;
     border-radius: 25px 25px 0px 0px;
 }
@@ -350,13 +348,13 @@ box-shadow: 2px 2px 3px #d4d4d4;
 .block_activities2{
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
-    width: 270px;
+    width: 22%;
     height: 250px;
 }
 
 .photo_activities2{
+    width: 100%;
     height: 200px;
-    width: 270px;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
@@ -364,14 +362,15 @@ box-shadow: 2px 2px 3px #d4d4d4;
 .block_activities3{
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
-    width: 270px;
+    width: 22%;
     height: 150px;
 }
 
 .photo_activities3{
     height: 100px;
-    width: 270px;
-object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -383,7 +382,7 @@ object-fit: cover;
 .footer{
     display: flex;
     flex-direction: row;
-    width: 1350px;
+    width: 100%;
     background-color: #F2F2F2;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -399,6 +398,8 @@ object-fit: cover;
 .footer_link{
     padding-bottom: 10px;
 }
+
+
 
 
 
@@ -450,6 +451,10 @@ object-fit: cover;
     .hover2{
         color: #0065FC;
         font-size: 20px;
+    }
+
+    nav > a:visited{
+        text-decoration: none;
     }
 
     .bold_titles{
@@ -522,6 +527,9 @@ object-fit: cover;
 
     .filters > input{
         height: 45px;
+    }
+
+    .boutonfiltres{
         font-size: 20px;
         font-weight: bold;
     }
@@ -542,7 +550,23 @@ object-fit: cover;
     .Middle{
         display: flex;
         flex-direction: column-reverse;
-        width: 100;
+    }
+
+    .vertical_description{
+        padding-left: 15px;
+        line-height: 2.5;
+    }
+    
+    .vertical_description2{
+        padding-left: 15px;
+    }
+    
+    .bigline{
+        line-height: 3.6;
+    }
+
+    .populaires .rating{
+        padding-top: 5px;
     }
 
     #hebergements{
@@ -556,11 +580,280 @@ object-fit: cover;
     .see_more{
         font-weight: bold;
         font-size: 20px;
-        padding-top: 20px;;
+        padding-top: 20px;
     }
 
     .activities{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        height: 1380px;
+        width: 100%;
+    }
+
+    .block_activities1, .block_activities2, .block_activities3{
+
+        width: 100%;
+        height: 210px;
+    }
+
+    .photo_activities1, .photo_activities2, .photo_activities3{
+        height: 140px;
+        object-fit: cover;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
     }
+    .footer_titles{
+        padding-bottom: 10px;
+    }
+
+    .footer_block{
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px){
+
+    body{
+        max-width: 100%;
+        padding: 2%;
+        padding-top: 4%;
+    }
+
+    header img{
+        width: 140px;
+        padding-right: 600px;
+    }
+
+    .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: 20%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        order: 3;
+        font-size: 22px;
+        border: transparent;
+        border-bottom: 2px solid #F2F2F2;
+        justify-content: space-around;
+    }
+
+    nav > a:active{
+        border-bottom: 2px solid #0065FC;
+        width: 50%;
+        text-align: center;
+    }
+
+    nav > a:visited{
+        text-decoration: none;
+    }
+
+    .nonequery{
+        display: none;
+    }
+
+    .nonelaptop{
+        display: block;
+        padding-top: 2%;
+    }
+
+    .hover2{
+        color: #0065FC;
+        font-size: 22px;
+    }
+
+    .bold_titles{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    section > p{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .logoGPS{   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top-left-radius: 25%;
+        border-bottom-left-radius: 25%;
+        background-color: #F2F2F2;
+        padding: 18px;
+        margin: 0 auto;
+
+    }
+    #Localisation{   
+        font-weight: bold;
+        font-size: 28px;
+        border: 2px solid #F2F2F2;
+        border-right: transparent;
+    }
+    
+    .GPS{
+        padding-bottom: 10px;
+        padding-left: 26%;
+        width: 100%;
+    }
+
+    .GPS i{
+        font-size: 25px;
+    }
+
+    .researchbutton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #0065FC;
+        border-radius: 25px;
+        padding: 15px;
+        margin-left: -20px;
+    }
+
+    .filters{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bold_titles2{
+        text-align: left;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .filtersbutton{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 10px;
+    }
+
+    .boutonfiltres{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .flexfiltres{
+        padding-right: 70px;
+    }
+
+    .logoinfo{
+        font-size: 24px;
+        border-radius: 50%;
+        width: 26px;
+        height: 28px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .info{
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .Middle{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .populaires{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: screen;
+    }
+    .vertical_block{
+        height: 150px;
+        border: 6px solid white;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 2px 2px 3px #d4d4d4;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        width: 60%;
+    }
+    
+    .vertical_photo{
+        height: 150px;
+        width: 45%;
+        object-fit: cover;
+        border-radius: 25px 0px 0px 25px;
+    }
+    
+    .vertical_description{
+        padding-left: 15px;
+        line-height: 2.5;
+    }
+    
+    .vertical_description2{
+        padding-left: 15px;
+    }
+    
+    .bigline{
+        line-height: 3.3;
+    }
+
+    #hebergements{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: white;
+    }
+
+    .see_more{
+        font-weight: bold;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .activities{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1380px;
+        width: 100%;
+    }
+
+    .block_activities1, .block_activities2, .block_activities3{
+
+        width: 100%;
+        height: 210px;
+    }
+
+    .photo_activities1, .photo_activities2, .photo_activities3{
+        height: 140px;
+        object-fit: cover;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer_titles{
+        padding-bottom: 10px;
+    }
+
+    .footer_block{
+        padding-bottom: 20px;
+    }
+}
