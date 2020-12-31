@@ -6,10 +6,13 @@
 body{
     font-family: Raleway, serif;
     width : auto;
+    margin: 0 auto;
 }
 
 .bloc_page{
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 a:link{
@@ -86,6 +89,7 @@ a{
     padding: 8px;
     text-align: center;
 }
+
 .Localisation{   
     color:black;
     font-size:25px;
@@ -116,7 +120,7 @@ a{
 
 .boutonfiltres{
     border: 2px solid;
-    background-color: white;
+    background-color: #DEEBFF;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-color: #F2F2F2;
@@ -233,7 +237,7 @@ a{
     font-size: 13px;
     padding-top: 15px;
     color:#0065FC;
- }
+}
 
  .empty_stars{
      display: inline-block;
@@ -241,7 +245,7 @@ a{
     padding-top: 15px;
     color: #F2F2F2;
     padding-left: 3px;
- }
+}
 
  .titre_align{
     font-size: 25px;
@@ -333,6 +337,7 @@ a{
     width: 22%;
     height: 450px;
 }
+
 .photo_activities1{
     height: 400px;
     overflow: hidden;
@@ -345,6 +350,7 @@ a{
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .text_activities2{
     padding-top: 15px;
     padding-left: 20px;
@@ -406,17 +412,17 @@ a{
 
 
 
-
-
 @media screen and (max-width: 480px)
 {
     body{
         max-width: 480px;
-        padding-top: 4%;
+        margin: 0 auto;
     }
 
     .bloc_page{
-        padding: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
 
     header img{
@@ -438,6 +444,7 @@ a{
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     nav{
         display: flex;
         flex-direction: row;
@@ -488,8 +495,8 @@ a{
         background-color: #F2F2F2;
         padding: 18px;
         margin: 0 auto;
-
     }
+
     #Localisation{   
         font-weight: bold;
         font-size: 22px;
@@ -649,14 +656,17 @@ a{
 
 
 
-
 @media screen and (min-width: 481px) and (max-width: 1000px){
 
     body{
         max-width: 100%;
-        padding: 2%;
-        padding-top: 4%;
         margin: 0 auto;
+    }
+
+    .bloc_page{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
 
     header img{
